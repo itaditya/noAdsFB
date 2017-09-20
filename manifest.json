@@ -1,0 +1,16 @@
+{
+    "name": "NoAds Facebook Extension",
+    "version": "1.0.18",
+    "description": "Surf facebook without ads",
+    "content_scripts": [{
+        "css": ["style.css"],
+        "js": ["script.js"],
+        "matches": ["https://www.facebook.com/*", "http://www.facebook.com/*"]
+    }],
+    "permissions": ["storage", "tabs"],
+    "icons": {
+        "48": "icon.png",
+        "128": "icon.png"
+    },
+    "manifest_version": 2
+}
